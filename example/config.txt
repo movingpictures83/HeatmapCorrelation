@@ -1,0 +1,2 @@
+Prefix plugins/HeatmapCorrelation/example/
+Plugin HeatmapCorrelation inputfile bn_correlation.csv outputfile heatmap.pdf
