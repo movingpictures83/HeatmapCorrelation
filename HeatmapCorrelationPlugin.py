@@ -14,6 +14,7 @@ class HeatmapCorrelationPlugin:
 
     def output(self, outfile):
         sns.clustermap(self.corr_df_reshaped, annot=True, cmap='coolwarm', center=0,figsize=(25,15))
+        self.corr_df_reshaped.to_csv(outfile+".csv")
         plt.savefig(outfile)
 
 # # Get skeleton of the
